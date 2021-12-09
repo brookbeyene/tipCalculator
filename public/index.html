@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ethereal by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="index.js" defer></script>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+								<div class="content color0 span-3-75">
+									<h1 class="major">Restaurant Tip Calculator</h1>
+									<h3>Tip in Dollar ($)</h3>
+									<div class="fields">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Total Bill</label>
+												<input type="text" name="name" id="cashInput" />
+											</div>
+											<div class="field half">
+												<label for="email">Cash ($)</label>
+												<input type="email" name="email" id="cashTip" />
+											</div>
+										</div>
+										
+									</div>
+									<ul class="actions">
+										<li><input type="submit text" id="totalCashCalculate" value="Calculate" class="button primary" onclick = "cashTip()"/></li>
+									</ul>
+                  
+                    				<p name="email" id="TotalCashTip"></p>
+									<!-- <p id="TotalCashTipValue"></p> -->
+									<input
+										type="text"
+										placeholder = "$0.00"
+										class= "output"
+										disabled>
+								</div>
+							</section>
+							<!-- Panel -->
+							<section class="panel banner right">
+								<div class="content color0 span-3-75">
+									<h1 class="major"><br/><br/></h1>
+									<h3>Tip by Percent (%)</h3>
+									<div class="fields">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Total Bill</label>
+												<input type="text" name="name" id="percentBillInput" />
+											</div>
+											<div class="field half">
+												<label for="email">Percent %</label>
+												<input type="email" name="email" id="percentNumberInput" />
+											</div>
+										</div>
+										
+									</div>
+									<ul class="actions">
+										<li><input id ="percentButton" type="submit" value="Calculate" class="button primary" onclick = "percetTip()"/></li>
+									</ul>
+									<!-- <p name="email" id="totalPercentTip"></p> -->
+									<p id="TotalTipValue"></p>
+									<input
+										type="text"
+										placeholder = "$0.00"
+										class= "output"
+										disabled>
+								</div>
+                
+							</section>
+						<!-- Copyright -->
+							<div class="copyright">&copy; By <a href="https://html5up.net">Brook and Keshawn</a>.</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
