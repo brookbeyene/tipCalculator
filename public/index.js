@@ -16,7 +16,8 @@ function cashTip(){
     let cashTip = document.querySelector("#cashTip")
     let totalCashButton = formatter.format(Number(cashInput.value) + Number(cashTip.value))
     for(let i = 0; i <= cashTip.length; i++){
-        document.querySelector('.output').value = formatter.format(Number(cashInput.value) + Number(cashTip.value))
+        document.querySelector('.output1').value = formatter.format(Number(cashInput.value) + Number(cashTip.value))
+        addTipValue
     }
 
 
@@ -34,7 +35,7 @@ function cashTip(){
         localStorage.setItem("My personal pip", JSON.stringify(movies))
     }
 
-    document.querySelector('.output').value = formatter.format(Number(cashInput.value) + Number(cashTip.value))
+    document.querySelector('.output1').value = formatter.format(Number(cashInput.value) + Number(cashTip.value))
 
     document.getElementById
     // document.getElementById("TotalCashTipValue").innerHTML = formatter.format(Number(cashInput.value) + Number(cashTip.value))
@@ -52,8 +53,9 @@ function percetTip(){
 let percentNumberInput = document.querySelector("#percentNumberInput")
 let totalPercentTip = document.querySelector("#totalPercentTip")
 let percentButton = document.querySelector("#percentButton")
-document.getElementById("TotalTipValue").innerHTML = formatter.format(Number(percentBillInput.value) + (Number(percentBillInput.value) * Number(percentNumberInput.value)/100))
+document.querySelector('.output2').value = formatter.format(Number(percentBillInput.value) + (Number(percentBillInput.value) * Number(percentNumberInput.value)/100))
 
+document.getElementById("TotalTipValue").innerHTML = formatter.format(Number(percentBillInput.value) + (Number(percentBillInput.value) * Number(percentNumberInput.value)/100))
 }
 
 
