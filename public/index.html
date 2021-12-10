@@ -15,6 +15,17 @@
 		
 	</head>
 	<body class="is-preload">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div id="nav-items" style="text-align: center;">
+		
+		<hr>
+		
+		  </div>
+		</div>
+	</div>
+		  
+		 
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -30,6 +41,10 @@
 									<div class="fields">
 										<div class="fields">
 											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="cashNameInput" />
+											</div>
+											<div class="field half">
 												<label for="name">Total Bill</label>
 												<input type="text" name="name" id="cashInput" />
 											</div>
@@ -42,6 +57,7 @@
 									</div>
 									<ul class="actions">
 										<li><input type="submit text" id="totalCashCalculate" value="Calculate" class="button primary" onclick = "cashTip()"/></li>
+										<li><input type="submit text" id="saveCashCalculate" value="Save" class="button primary" onclick = "saveCashTip()"/></li>
 									</ul>
                   
                     				<p name="email" id="TotalCashTip"></p>
@@ -61,6 +77,10 @@
 									<div class="fields">
 										<div class="fields">
 											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="percentNameInput" />
+											</div>
+											<div class="field half">
 												<label for="name">Total Bill</label>
 												<input type="text" name="name" id="percentBillInput" />
 											</div>
@@ -73,6 +93,7 @@
 									</div>
 									<ul class="actions">
 										<li><input id ="percentButton" type="submit" value="Calculate" class="button primary" onclick = "percetTip()"/></li>
+										<li><input type="submit text" id="savePercentButton" value="Save" class="button primary" onclick = "savePercentTip()"/></li>
 									</ul>
 									<!-- <p name="email" id="totalPercentTip"></p> -->
 									<p id="TotalTipValue"></p>
@@ -80,13 +101,17 @@
 										type="text"
 										placeholder = "$0.00"
 										class= "output"
+										id="percentTipOutput"
 										disabled>
 								</div>
                 
 							</section>
+
 						<!-- Copyright -->
 							<div class="copyright">&copy; By <a href="https://html5up.net">Brook and Keshawn</a>.</div>
 					</div>
+					<span id="openSideNavButton" style="font-size:30px;cursor:pointer;color:black;display:block;width:100%;" onclick="openNav()">&#9776; open</span>
+
 			</div>
 
 		<!-- Scripts -->
